@@ -1,0 +1,46 @@
+#main-nav .scoial-icons {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 1fr;
+  gap: 1.2rem;
+}
+
+#main-nav ul,
+#main-nav img {
+  justify-self: center;
+}
+
+#main-articles .articles-container {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#header .header-container {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #header .header-container,
+  #main-articles .articles-container,
+  #main-footer .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  #main-footer .footer-container > div:last-child {
+    grid-column: 1;
+  }
+
+  #main-footer .footer-container > div:last-child > * {
+    border-bottom: 1px dotted #444;
+    padding-bottom: 1rem;
+  }
+
+  #header .header-container {
+    font-size: 1.3rem;
+  }
+
+  .page-container {
+    grid-template-columns: 1fr;
+  }
+}
